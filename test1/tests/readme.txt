@@ -1,0 +1,11 @@
+1. How to resolve conditional elements which are not yet present in the dom?
+- 
+
+2. How to print value in browser console?
+ -The page.evaluate() API can run a JavaScript function in the context of the web page and bring results back to the Playwright environment.
+   Browser globals like window and document can be used in evaluate.
+
+3. Best practice to handle waiting? - check response.
+-  page.waitForResponse() Returns the matched response.
+    Can use proper url to get specific response.
+    Can use multiple predicates.
