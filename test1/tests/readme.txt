@@ -1,6 +1,6 @@
 1. How to resolve conditional elements which are not yet present in the dom?
-- 
-
+- We could use page.$('') to check if an element exists in the DOM?
+  
 2. How to print value in browser console?
  -The page.evaluate() API can run a JavaScript function in the context of the web page and bring results back to the Playwright environment.
    Browser globals like window and document can be used in evaluate.
