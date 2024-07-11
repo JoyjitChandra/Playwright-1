@@ -2,6 +2,11 @@
 - We could use page.$('') to check if an element exists in the DOM?
   The method finds an element matching the specified selector in the ElementHandle's subtree. 
   If no elements match the selector, returns null.
+  or we could check for the API response. 
+
+  Though probably the solution is not that simple.
+
+  Probably the trick is not that simple.
   
 2. How to print value in browser console?
  -The page.evaluate() API can run a JavaScript function in the context of the web page and bring results back to the Playwright environment.
