@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 
 test("check response", async ({ page }) => {
   await page.goto("https://kadence.in/");
-  await Promise.all([
+  const [response] = await Promise.all([
     page.waitForResponse(
       (res) =>
         res.status() == 200 &&
@@ -19,4 +19,12 @@ test("print value in browser console", async ({ page }) => {
   await page.evaluate(() => console.log("hello"));
 });
 
-test("check for conditional link login/register", async ({ page }) => {});
+test("check for conditional link login/register", async ({ page }) => {
+  await page.goto("https://www.bajaao.com/");
+  const login = await page.$("text=Login / SignUp");
+  if (login !== null) {
+    await login.click();
+  }else{
+    await page.evaluate(() => console.log("login button not visible"));
+  }
+});
