@@ -4,9 +4,7 @@
   If no elements match the selector, returns null.
   or we could check for the API response. 
 
-  Though probably the solution is not that simple.
-
-  Probably the trick is not that simple.
+  Though probably the solution is not that simple. I am really curious know the actual solution for this scenario.
   
 2. How to print value in browser console?
  -The page.evaluate() API can run a JavaScript function in the context of the web page and bring results back to the Playwright environment.
